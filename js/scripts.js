@@ -8,14 +8,22 @@ $(document).ready(function () {
     console.log(sentence);
     var words = sentence.split(" ");
     console.log(words);
-    words.forEach(function (word) {
-      if (word.length >= 3) {
-        threePlus.push(word);
+    
+    for (i = 0; i <= words.length - 1; i++) {
+      if (words[i].length >= 3) {
+        threePlus.push(words[i]);
       }
-    })
+
+    }
+    
     newSentence = threePlus.reverse().join(" ");
     $("#output").text(newSentence);
    
     
   });
 });
+
+//words.forEach(function (word) {
+  
+
+  
